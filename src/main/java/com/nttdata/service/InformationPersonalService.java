@@ -1,9 +1,11 @@
 package com.nttdata.service;
 
-import com.nttdata.entities.InformationPersonal;
 import com.nttdata.exception.InformationException;
+import com.nttdata.models.reponse.InformationPersonalResponse;
+
+import java.util.List;
 
 public interface InformationPersonalService {
-    InformationPersonal findByIdNumberAndTypeNumber(Integer id, String typeNumber) throws InformationException;
+    List<InformationPersonalResponse> findByIdNumberAndTypeNumber(Integer id, String typeNumber) throws InformationException;
 
 }

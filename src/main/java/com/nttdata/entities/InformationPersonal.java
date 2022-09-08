@@ -1,24 +1,22 @@
 package com.nttdata.entities;
 
+
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-@Data
-@EqualsAndHashCode(callSuper = false)
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "INFORMATION_PERSONAL")
 public class InformationPersonal {
-
     @Id
-    @Column(name = "code")
-    private Integer code;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_number")
+    private Integer code;
+    @Column(name = "user_id")
     private Integer idNumber;
     @Column(name = "type_number")
     private String typeNumber;
