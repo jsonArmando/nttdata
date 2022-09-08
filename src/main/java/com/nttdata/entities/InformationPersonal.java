@@ -12,12 +12,16 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "ESTADOS_SALUD")
+@Table(name = "INFORMATION_PERSONAL")
 public class InformationPersonal {
 
     @Id
     @Column(name = "code")
     private Integer code;
+    @Column(name = "id_number")
+    private Integer idNumber;
+    @Column(name = "type_number")
+    private String typeNumber;
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "middle_name")
