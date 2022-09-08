@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface InformationPersonalRepository extends CrudRepository<InformationPersonal, Integer> {
+    InformationPersonal findByIdNumberAndTypeNumber(Integer id, String typeNumber);
 }
