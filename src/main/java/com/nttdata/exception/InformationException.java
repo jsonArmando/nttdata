@@ -1,17 +1,17 @@
 package com.nttdata.exception;
 
-import com.nttdata.utils.InformationStatusError;
+import com.nttdata.utils.InformationError;
 import lombok.Getter;
 
 @Getter
 public class InformationException extends Exception{
-    private final InformationStatusError informationStatusError;
-    public InformationException(InformationStatusError informationStatusError){
-        super(informationStatusError == null ? null : informationStatusError.getMessage());
-        this.informationStatusError = informationStatusError;
+    private final InformationError informationError;
+    public InformationException(InformationError informationError){
+        super(informationError == null ? null : informationError.getMessage());
+        this.informationError = informationError;
     }
-    public InformationException(InformationStatusError informationStatusError, Exception exception){
+    public InformationException(InformationError informationError, Exception exception){
         super(exception);
-        this.informationStatusError =informationStatusError;
+        this.informationError = informationError;
     }
 }
