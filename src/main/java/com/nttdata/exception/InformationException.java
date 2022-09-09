@@ -10,8 +10,4 @@ public class InformationException extends Exception{
         super(informationError == null ? null : informationError.getMessage());
         this.informationError = informationError;
     }
-    public InformationException(InformationError informationError, Exception exception){
-        super(exception);
-        this.informationError = informationError;
-    }
 }

@@ -1,7 +1,6 @@
 package com.nttdata.service;
 import com.nttdata.exception.IdNotFoundException;
 import com.nttdata.utils.Constants;
-import org.springframework.beans.factory.annotation.Value;
 
 import com.nttdata.exception.InformationException;
 import com.nttdata.mapper.InformationPersonalMapper;
