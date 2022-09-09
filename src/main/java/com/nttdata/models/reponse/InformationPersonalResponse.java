@@ -12,7 +12,6 @@ import java.io.Serializable;
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class InformationPersonalResponse implements Serializable {
-    private Integer code;
     private String firstName;
     private String middleName;
     private String firstSurname;
